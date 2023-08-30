@@ -3,7 +3,7 @@ run-name: Tentative de DevSecOps à but pédagogique
 on: [push]
 jobs:
   DAST:
-    runs-on: ubuntu:22-04
+    runs-on: ubuntu-latest
     steps: 
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.9.0
